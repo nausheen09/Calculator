@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="card card-color border-0" style="width: 25rem;">
+    <div class="card-body border1">
+
+      <div class="full-width">
+        <div class="input-group flex-nowrap bordereddd" >
+          <input type="text"  class="form-control"  id="data" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+      </div>
+
+      <div class="container text-center mt-2 mb-2 ">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2 ">
+          <div class="col fs-3 full-width"><button onclick="clearValue()" class="btn-popup">C</button></div>
+          <div class="col  fs-3 full-width change"><button onclick="deleteLast()" class="btn-popup">Deleted</button></div>
+        </div>
+      </div>
+
+     
+      <div class="rowone">
+        <div class="container text-center mb-2">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 ">
+            <div class="col "><button onclick="getNumber(this)" class="btn-popup">7</button></div>
+            <div class="col"><button onclick="getNumber(this)" class="btn-popup">8</button></div>
+            <div class="col"><button onclick="getNumber(this)" class="btn-popup">9</button></div>
+            <div class="col"> <button onclick="getNumber(this)" class="btn-popup">X</button></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="rowone"> 
+        <div class="container text-center mb-2">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 ">
+            <div class="col "><button onclick="getNumber(this)" class="btn-popup">4</button></div>
+            <div class="col"><button onclick="getNumber(this)" class="btn-popup">5</button></div>
+            <div class="col"> <button onclick="getNumber(this)" class="btn-popup">6</button></div>
+            <div class="col"><button onclick="getNumber(this)" class="btn-popup">-</button></div>
+          </div>
+        </div>   
+      </div>
+
+
+      <div class="rowone">
+        <div class="container text-center  mb-2">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 ">
+            <div class="col "><button onclick="getNumber(this)" class="btn-popup">1</button></div>
+            <div class="col"><button onclick="getNumber(this)"class="btn-popup" >2</button></div>
+            <div class="col"> <button onclick="getNumber(this)" class="btn-popup">3</button></div>
+            <div class="col"><button onclick="getNumber(this)" class="btn-popup">+</button></div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="rowone">
+        <div class="container text-center  mb-2">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 ">
+            <div class="col "><button onclick="getNumber(this)" class="btn-popup">0</button></div>
+            <div class="col"><button onclick="getNumber(this)" class="btn-popup">/</button></div>
+            <div class="col"><button onclick="getResult()" class="btn-popup">=</button></div>
+            <div class="col"><button onclick="getNumber(this)"class="btn-popup">.</button></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
