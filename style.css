@@ -78,3 +78,38 @@ border-radius: 26px;
 
 
 
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  
+  .row-cols-4 .col {
+    width: 100%;
+  }
+
+  .rowone button {
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .rowone button, .full-width button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .border1 {
+    padding: 10px;
+  }
+
+  .bordereddd input {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .card-color {
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+}
